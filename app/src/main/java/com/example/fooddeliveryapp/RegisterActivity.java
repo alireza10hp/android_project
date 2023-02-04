@@ -253,5 +253,9 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     private void sendUserToMainActivity(String username) {
+        Intent intent = new Intent(RegisterActivity.this, DashboardActivity.class);
+        intent.putExtra("userName", username);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 }

@@ -33,6 +33,18 @@
             android:name=".LoginActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".CustomerCart"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ShowOrders"
+            android:exported="true">
+        </activity>
 
     </application>
 

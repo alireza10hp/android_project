@@ -110,5 +110,9 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void sendUserToMainActivity(String userName) {
+        Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
+        intent.putExtra("userName",userName);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 }
